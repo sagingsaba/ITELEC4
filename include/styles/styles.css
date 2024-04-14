@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-color:#f5f6fab1;
+    background-color:#f5f6fa94;
     display: grid;
     height: 100%;
     width: 100%;
@@ -318,7 +318,7 @@ text-decoration: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    
+    margin: auto 20px 20PX;
 }
 
 .parent-btn a {
