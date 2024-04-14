@@ -8,7 +8,7 @@
 }
 
 html, body {
-    background-color:#f5f6fa94;
+    background-color:#f5f6fabc;
     display: grid;
     height: 100%;
     width: 100%;
@@ -383,4 +383,16 @@ form .btn input[type="submit"]:hover {
 
 .bold-text {
     font-weight: bold;
+}
+
+.field {
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px; /* Adjust this value to move the eye icon closer or farther from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    cursor: pointer;
 }
