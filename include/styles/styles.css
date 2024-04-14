@@ -97,7 +97,7 @@ html, body {
     width: 390PX;
     height: 500px;
     background-color: #f1f5fd;
-    padding: 50px;
+    padding: 56px;
     border-radius: 35px;
     box-shadow: 0 12px 4px rgba(0, 0, 0, 0.1), inset 0 4px 1px rgb(255, 255, 255);
 }
@@ -198,7 +198,7 @@ input[type="radio"] {
     
     height: 50px;
     width: 100%;
-    margin-top: 10px;
+
 }
 
 .form-inner form .field input {
