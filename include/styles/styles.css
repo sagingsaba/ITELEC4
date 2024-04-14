@@ -333,10 +333,23 @@ text-decoration: none;
     
 }
 
-.parent-btn a img {
-    max-width: 80%; /* Make sure the image fits inside the circle */
-    max-height: 80%; /* Make sure the image fits inside the circle */
+
+.parent-btn a {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100px;  /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it circular */
+    background-color: blue; /* Set background color to blue */
+    transition: background 0.3s ease;
 }
+
+.parent-btn a img {
+    max-width: 75%; /* Make sure the image fits inside the circle */
+    max-height: 75%; /* Make sure the image fits inside the circle */
+}
+
 .parent-btn a:hover {
     background: -webkit-linear-gradient(left, rgb(0, 107, 160), #0081c7);
     /* You can also add other hover effects here like changing text color */
