@@ -33,3 +33,29 @@ function toggleModal() {
 
 // Event listener for the modal open button
 document.getElementById("openModalButton").addEventListener("click", toggleModal);
+
+
+
+
+function toggleDropdown(dropdownId, buttonClass) {
+    var dropdown = document.getElementById(dropdownId);
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches(buttonClass)) {
+            var dropdowns = document.getElementsByClassName(dropdownId);
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    };
+}

@@ -457,8 +457,24 @@ form .btn input[type="submit"]:hover {
 }
 
 
-.modal {
+.modal, .dropdown-content, .dropdown-content2, i{
     display: none;
+ 
   }
-  
 
+.dropdown,.dropbtn,.dropbtn2{
+    cursor: pointer;
+}
+
+
+.seach input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+
+  
