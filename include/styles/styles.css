@@ -32,13 +32,15 @@ html, body {
 
 
 .dhvsu_logo{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
 }
 
 .dhvsu_logo, .magkatabi {
     display: flex;
     margin: auto 80px;
+    margin-top: -4px;
+    margin-bottom: -4px;
 }
 
 .magkatabi {
