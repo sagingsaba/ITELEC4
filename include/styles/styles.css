@@ -69,20 +69,25 @@ html, body {
 }
 
 .content {
-    max-width: 600px; /* Set maximum width */
+    max-width: 700px; /* Set maximum width */
     margin: 0 auto; /* Center the div horizontally */
     padding: 20px; /* Add some padding */
     box-sizing: border-box; /* Include padding and border in total width */
     text-align: center;
-    
+    font-size: larger;
   }
   
   h1 {
     margin-top: 80px; /* Remove default margin from the top */
     margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   
   p {
+    padding-top: 10px;
+    padding-left: 28px; /* Add some padding */
+    padding-right: 28px; /* Add some padding */
     margin-bottom: 20px; /* Add margin to the bottom of the paragraph */
 
   }
@@ -93,8 +98,8 @@ html, body {
     text-decoration: none;
     background: linear-gradient(to right, #00A8FF, #0097E6);
     align-items: center;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 190px;
+    margin-right: 190px;
     margin-top: 40px;
   }
 
