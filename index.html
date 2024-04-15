@@ -1,112 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="include/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/png" href="image/dhvsucsslogo.png">
     <script src="include/js/javascript.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
-<div class="background">
-    <div class="navbar">
-   
-      <a href="index.html" class="dhvsu_logo">
-        <img src="image/dhvsucsslogo.png" alt="dhvsu_logo">
-    </a>
+    <div class="background">
+        <div class="navbar">
+            <a href="index.html" class="dhvsu_logo">
+                <img src="image/dhvsucsslogo.png" alt="dhvsu_logo">
+            </a>
 
-        <div class="magkatabi">
-            <div class="login_btn">
-                <a href="#" style="color: #f1f5fd;" class="openModalButton" onclick="toggleModal()">Log in</a>
-            </div>
-            <div class ="support_btn">
-                <a href="#">Support</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="myContent" class="content">
-        <h1>LOREM IPSUM DOLOR SIT AMET</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div class="signup_btn">
-          <a href="#" style="color: #f1f5fd;" id="openModalButton" onclick="toggleModal()">Get Started</a>
-       </div>
-    </div>
-
-    <div id="myModal" class="modal">
-        <div class="wrapper">
-            <div class="title-text">
-                <div class="title student" id="studentTitle">Student</div>
-                <div class="title instructor" id="instructorTitle">Instructor</div>
-            </div>
-            <div class="form-container">
-                <div class="slide-controls">
-                    <input type="radio" name="slide" id="student" checked>
-                    <input type="radio" name="slide" id="instructor">
-                    <label for="student" class="slide student">STUDENT</label>
-                    <label for="instructor" class="slide instructor">INSTRUCTOR</label>
-                    <div class="slider-tab"></div>
+            <div class="magkatabi">
+                <div class="login_btn">
+                    <a href="#" style="color: #f1f5fd;" class="openModalButton" onclick="toggleModal()">Log in</a>
                 </div>
-                <div class="form-inner">
-                    <form id="loginForm" action="#" class="login">
-                        <div class="field">
-                            <input type="text" placeholder="Email Address" required>
-                        </div>
-                        <div class="field">
-                            <input type="password" id="passwordInput" placeholder="Password" required>
-                            <span class="toggle-icon" onclick="togglePassword()"><i class="fas fa-eye" id="eye-icon"></i></span>
-                        </div>
-                        <div class="pass-link"><a href="#">Forgot password?</a></div>
-                        <div class="field btn">
-                            <div class="btn-layer"></div>
-                            <input type="submit" value="Log In" style="font-weight: bold;">
-                        </div>
-                        <div class="signup-button">Don't have an account? <a class="create-new" href="#">Create one now</a></div>
-                    </form>
+                <div class="support_btn">
+                    <a href="#">Support</a>
                 </div>
             </div>
         </div>
+
+        <div id="myContent" class="content">
+            <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="signup_btn">
+                <a href="#" style="color: #f1f5fd;" id="openModalButton" onclick="toggleModal()">Get Started</a>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="wrapper">
+                <div class="title-text">
+                    <div class="title student" id="studentTitle">Student</div>
+                    <div class="title instructor" id="instructorTitle">Instructor</div>
+                </div>
+                <div class="form-container">
+                    <div class="slide-controls">
+                        <input type="radio" name="slide" id="student" checked>
+                        <input type="radio" name="slide" id="instructor">
+                        <label for="student" class="slide student">STUDENT</label>
+                        <label for="instructor" class="slide instructor">INSTRUCTOR</label>
+                        <div class="slider-tab"></div>
+                    </div>
+                    <div class="form-inner">
+                        <form id="loginForm" action="#" class="login">
+                            <div class="field">
+                                <input type="text" placeholder="Email Address" required>
+                            </div>
+                            <div class="field">
+                                <input type="password" id="passwordInput" placeholder="Password" required>
+                                <span class="toggle-icon" onclick="togglePassword()"><i class="fas fa-eye" id="eye-icon"></i></span>
+                            </div>
+                            <div class="pass-link"><a href="#">Forgot password?</a></div>
+                            <div class="field btn">
+                                <div class="btn-layer"></div>
+                                <input type="submit" value="Log In" style="font-weight: bold;">
+                            </div>
+                            <div class="signup-button">Don't have an account? <a class="create-new" href="#">Create one now</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parent-btn">
+            <a href="#"><img src="image/father-and-son.png" alt="parent button" class="openModalButton" onclick="toggleModal()"></a>
+        </div>
+        <div class="background-img">
+            <img src="image/bg.jpg" alt="background">
+        </div>
     </div>
 
-    <div class="parent-btn">
-        <a href="#"><img src="image/father-and-son.png" alt="parent button"  class="openModalButton" onclick="toggleModal()"></a>
-    </div>
-    <div class="background-img">
-        <img src="image/bg.jpg" alt="background">
-    </div>
-</div>
-
-<!-- JavaScript Code -->
-<script>
-    function togglePassword() {
-        var passwordField = document.getElementById("passwordInput");
-        var eyeIcon = document.getElementById("eye-icon");
-        if (passwordField.type === "password") {
-            passwordField.type = "text";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-        } else {
-            passwordField.type = "password";
-            eyeIcon.classList.remove("fa-eye-slash");
-            eyeIcon.classList.add("fa-eye");
+    <!-- JavaScript Code -->
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("passwordInput");
+            var eyeIcon = document.getElementById("eye-icon");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                eyeIcon.classList.remove("fa-eye");
+                eyeIcon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                eyeIcon.classList.remove("fa-eye-slash");
+                eyeIcon.classList.add("fa-eye");
+            }
         }
-    }
 
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting normally
-        window.location.href = 'C:\\xampp\\htdocs\\ITELEC4\\dashboard_instruct.html';
-    });
-</script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            window.location.href = 'C:\\xampp\\htdocs\\ITELEC4\\dashboard_instruct.html';
+        });
+    </script>
 
 </body>
+
 </html>
