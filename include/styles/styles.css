@@ -46,7 +46,7 @@ html, body {
     justify-content: center; /* Center-align items horizontally */
     align-items: center; /* Center-align items vertically */
 }
-.login_btn, .support_btn, .signup_btn {
+.login_btn, .support_btn {
     margin-right: 10px;
     margin-left: 10px;
     font-weight: bold;
@@ -59,6 +59,7 @@ html, body {
     text-decoration: none;
     transition: background 0.3s ease;
     border-radius: 30px;
+    box-shadow:0 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .support_btn a {
@@ -67,9 +68,47 @@ html, body {
     color: #353B48;
 }
 
+.content {
+    max-width: 600px; /* Set maximum width */
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding and border in total width */
+    text-align: center;
+    
+  }
+  
+  h1 {
+    margin-top: 80px; /* Remove default margin from the top */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px; /* Add margin to the bottom of the paragraph */
+
+  }
+  
+  .signup_btn {
+    justify-content: center; /* Center align horizontally */
+    text-align: center; /* Center align the button */
+    text-decoration: none;
+    background: linear-gradient(to right, #00A8FF, #0097E6);
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+
+  
+ #openModalButton{
+    text-align: center;
+text-decoration: none;
+font-weight: bold;}
+
+  
 
 /* Hover effects */
 .login_btn:hover,.signup_btn:hover {
+
     background: -webkit-linear-gradient(left, rgb(0, 107, 160), #0081c7);
     color: #DCDDE1 /* Text color on hover */
 }
@@ -268,7 +307,7 @@ form .field input:focus::placeholder {
 form .btn {
     height: 50px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 45px;
     position: relative;
     overflow: hidden;
 }
