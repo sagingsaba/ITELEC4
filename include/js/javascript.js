@@ -17,3 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// Function to toggle the modal
+function toggleModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
+}
+
+
+// Event listener for the modal open button
+document.getElementById("openModalButton").addEventListener("click", toggleModal);
+
+// You can add more modal functionality here if needed

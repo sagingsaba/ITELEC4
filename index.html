@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="include\styles\styles.css">
+    <link rel="icon" type="image/png" href="image/dhvsucsslogo.png">
     <script src="include\js\javascript.js"></script>
-    <link rel="icon" type="image/png" href="/include/image/dhvsycsslogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -19,22 +19,22 @@
     <div class="navbar">
 
         <div class="dhvsu_logo">
-        <img src="image\dhvsycsslogo.png" alt="dhvsu_logo">
+        <img src="image\dhvsucsslogo.png" alt="dhvsu_logo">
         </div>
 
     <div class="magkatabi">
       <div class="login_btn">
-        <a href="#" style="color:  #f1f5fd;">Login</a>
-    </div>
+        <a href="#" style="color: #f1f5fd;" id="openModalButton" onclick="toggleModal()">Log in</a>
+     </div>
 
     <div class ="support_btn">
       <a href="#" >Support</a>
-  </div>
+     </div>
   
     </div>
     </div>
 
-
+    <div id="myModal" class="modal">
     <div class="wrapper">
  
         <div class="title-text">
@@ -76,7 +76,7 @@
         </div>
       
     </div>
-
+  </div>
     <div class="parent-btn">
       <a href="index.html"> <img src="image\father-and-son.png" alt="parent button"> </a>
   </div>

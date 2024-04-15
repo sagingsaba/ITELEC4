@@ -46,15 +46,14 @@ html, body {
     justify-content: center; /* Center-align items horizontally */
     align-items: center; /* Center-align items vertically */
 }
-
-.login_btn, .support_btn {
+.login_btn, .support_btn, .signup_btn {
     margin-right: 10px;
     margin-left: 10px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.login_btn {
+.login_btn,.signup_btn {
     background: linear-gradient(to right, #00A8FF, #0097E6);
     padding: 10px 20px;
     text-decoration: none;
@@ -70,7 +69,7 @@ html, body {
 
 
 /* Hover effects */
-.login_btn:hover {
+.login_btn:hover,.signup_btn:hover {
     background: -webkit-linear-gradient(left, rgb(0, 107, 160), #0081c7);
     color: #DCDDE1 /* Text color on hover */
 }
@@ -402,3 +401,10 @@ form .btn input[type="submit"]:hover {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+
+.modal {
+    display: none;
+  }
+  
+
