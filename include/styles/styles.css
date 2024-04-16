@@ -504,7 +504,7 @@ form .btn input[type="submit"]:hover {
 .nav-right {
     display: flex;
     align-items: center;
-    padding-RIGHT:6em;
+    padding-RIGHT: 6em;
 }
 
 
@@ -550,6 +550,7 @@ form .btn input[type="submit"]:hover {
     color: black;
     display: block;
     text-align: center;
+    padding-RIGHT:7em;
 }
 
 #myLinks a:hover {
