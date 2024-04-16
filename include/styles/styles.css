@@ -504,18 +504,8 @@ form .btn input[type="submit"]:hover {
 .nav-right {
     display: flex;
     align-items: center;
-    padding-left: 50em;
+    padding-RIGHT:6em;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .search {
