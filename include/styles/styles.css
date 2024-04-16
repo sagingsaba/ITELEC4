@@ -507,14 +507,79 @@ form .btn input[type="submit"]:hover {
     padding-left: 50em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .search {
-    margin-right: 100px; /* Adjust spacing as needed */
+    margin-right: 20px; /* Adjust spacing as needed */
+    display: flex; /* Add this to make the input and button appear side by side */
 }
 
+.search input[type=text] {
+    float: left; /* Remove this to make it visible */
+    padding: 10px; /* Adjust padding as needed */
+    border: none;
+    margin-top: 8px;
+    margin-right: 10px; /* Adjust margin as needed */
+    font-size: 17px;
+    flex: 1; /* Allow it to take up remaining space */
+}
+
+.search button[type=submit] {
+    padding: 10px 15px; /* Adjust padding as needed */
+    border: none;
+    background-color: #DCDDE1; /* Change background color if needed */
+    cursor: pointer;
+}
 
 .menu {
-    margin-right: 100px; /* Adjust spacing as needed */
+    margin-right: 20px; /* Adjust spacing as needed */
 }
+
+#myLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position it below the menu icon */
+    right: 0;
+    background-color: #f1f1f1; /* Background color for the dropdown */
+    z-index: 1000;
+}
+
+#myLinks a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+#myLinks a:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .dashboard-left {
     position: fixed;
