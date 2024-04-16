@@ -466,7 +466,6 @@ form .btn input[type="submit"]:hover {
     cursor: pointer;
 }
 
-
 .seach input[type=text] {
     float: right;
     padding: 6px;
@@ -476,5 +475,109 @@ form .btn input[type="submit"]:hover {
     font-size: 17px;
   }
 
+  /* DITO YUNG NA EDIT KO */
 
-  
+
+.dashboard-top {
+    margin-top: 60px; /* Adjust the margin top to position it below the main navbar */
+    padding: 20px; /* Optional: Add padding */
+    background-color: #DCDDE1;
+    border-bottom: 1px solid #ccc; /* Optional: Add border for separation */
+    position: fixed;
+    top: 32px;
+    left: 250px;
+    width: 91%;;
+    padding: 20px;
+    z-index: 1000;
+
+}
+.dash-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    flex: 1; /* Takes up all available space */
+    padding-right: 5em ;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-left: 50em;
+}
+
+.search {
+    margin-right: 100px; /* Adjust spacing as needed */
+}
+
+
+.menu {
+    margin-right: 100px; /* Adjust spacing as needed */
+}
+
+.dashboard-left {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    height: 100%; /* Adjust height as needed */
+    width: 250px; /* Adjust width as needed */
+    background-color: #f0f0f0; /* Set background color */
+    border-right: 1px solid #ccc; /* Optional: Add border for separation */
+    padding: 20px; /* Optional: Add padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.dashboard-left h2 {
+    margin-bottom: 20px; /* Optional: Add margin to the heading */
+}
+
+.dropdown {
+    margin-bottom: 20px; /* Optional: Add margin to the dropdown */
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 80vh;
+    padding-left: 20em;
+    margin-top: 120px;
+    
+}
+
+.dashboard-calendar {
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.calendar {
+    padding: 50px;
+}
+
+.main-notif{
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 100px;
+    border: 1px solid #000;
+    width: 90%;
+    height: 400px;
+}
+
+.class-sched{
+    background-color: #DCDDE1;
+    width: 85%;
+    height: 400px;
+    padding-left: 50px;
+    margin-left: 250px;
+}
+.class-sched table{
+    margin-top: 20px;
+    width: 95%;
+    height: 50%;
+}
+.class-sched h2{
+    padding-top: 50px;
+    padding-left: 20px;
+}

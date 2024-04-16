@@ -38,52 +38,96 @@
         <!-- Main Content -->
         <div id="myContent" class="dash-content">
             <!-- Content goes here -->
-            <div class="Dashboard">
-                <div class="dash-nav">
-                    <label>Dashboard</label>
-                    <div class="search">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </div>
-                    <div class="menu">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
+            <div class="dashboard-left">
+                <div class="announcement-panel">
+                    <h2>Announcement</h2>
+                    <div class="dropdown">
+                        <label onclick="toggleDropdown('myDropdown', '.dropbtn')" class="dropbtn">Major Subjects</label>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">CAP 323</a>
+                            <a href="#">IAS 323</a>
+                            <a href="#">IT ELECT 4</a>
+                        </div><br>
 
-                    <div id="myLinks" style="display: none;">
-                        <a href="index.html">Log Out</a>
+                        <label onclick="toggleDropdown('myDropdown2', '.dropbtn2')" class="dropbtn2">Minor Subjects</label>
+                        <div id="myDropdown2" class="dropdown-content2">
+                            <a href="#">CIS 323</a>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="dashboard-top">  
+                <div class="dash-nav">
+                    <div class="nav-left">
+                        <h2>Dashboard</h2>
+                    </div>
+                    <div class="nav-right">
+                        <div class="search">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="menu">
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div id="myLinks" style="display: none;">
+                            <a href="index.html">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="left-side">
                     <!-- <div class="contacts">
                         <div class="user">Jun</div>
                         <div class="user">Jose</div>
                         <div class="user">Juan</div>
-                    </div> -->
-
-                    <div class="announcement-panel">
-                        <label>Announcement</label>
-                        <div class="dropdown">
-                            <label onclick="toggleDropdown('myDropdown', '.dropbtn')" class="dropbtn">Major Subjects</label>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="#">CAP 323</a>
-                                <a href="#">IAS 323</a>
-                                <a href="#">IT ELECT 4</a>
-                            </div>
-
-                            <label onclick="toggleDropdown('myDropdown2', '.dropbtn2')" class="dropbtn2">Minor Subjects</label>
-                            <div id="myDropdown2" class="dropdown-content2">
-                                <a href="#">CIS 323</a>
-                            </div>
-                        </div>
+                    </div> -->    
+                </div>
+            </div>
+            <div class="dashboard-container">
+                <div class="main-notif">
+                    <h3>NOTIFICATIONS</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id sem mauris. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta congue ligula et tempus. </p>
+                </div>
+                <div class="dashboard-calendar">
+                    <div class="calendar">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=Asia%2FManila&bgcolor=%23ffffff&title=CALENDAR&src=MjAyMTMwNjg2NkBkaHZzdS5lZHUucGg&src=Y19jbGFzc3Jvb21iOGFhNTg2ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20zZjg4OTJkMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb201MGIzYTljMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb204ZDM3ZWVkN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21hZGJjN2E1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20xYTdlZTgyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20wNTc1MWVmN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21iNGIyNGRiMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21hYjZjYjlmZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21hM2JhYzgxZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21jYWU3MGI2YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb204YTBkMmExYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb205ZDIzOTIzNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21jODY4MjEwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb201Y2I0MjAyMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb205NzE5NjRmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb200NjNiMWJkNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21kNGVhZjNjNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb202MDVjOWM5N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21lM2U2OWYwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20yZmVmMThkM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21iNWQ0YzRhMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20xYWE0MDU4Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb200ZDExM2QwYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb202MjM2Y2NlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20wOTQyNjM1MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230047a8&color=%23202124&color=%23137333&color=%230047a8&color=%230047a8&color=%230047a8&color=%230047a8&color=%2333B679&color=%23007b83&color=%23c26401&color=%230047a8&color=%230047a8&color=%230047a8&color=%230047a8&color=%23c26401&color=%23c26401&color=%23202124&color=%23c26401&color=%23174ea6&color=%23b80672&color=%230047a8&color=%23202124&color=%23202124&color=%23202124&color=%23c26401&color=%237627bb&color=%23c26401" style="border:solid 1px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
                     </div>
                 </div>
-
-
-            <div class="calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=Asia%2FManila&bgcolor=%23ffffff&title=CALENDAR&src=MjAyMTMwNjg2NkBkaHZzdS5lZHUucGg&src=Y19jbGFzc3Jvb21iOGFhNTg2ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20zZjg4OTJkMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb201MGIzYTljMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb204ZDM3ZWVkN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21hZGJjN2E1MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20xYTdlZTgyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20wNTc1MWVmN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21iNGIyNGRiMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21hYjZjYjlmZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21hM2JhYzgxZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21jYWU3MGI2YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb204YTBkMmExYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb205ZDIzOTIzNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21jODY4MjEwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb201Y2I0MjAyMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb205NzE5NjRmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb200NjNiMWJkNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21kNGVhZjNjNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb202MDVjOWM5N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21lM2U2OWYwN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20yZmVmMThkM0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb21iNWQ0YzRhMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20xYWE0MDU4Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb200ZDExM2QwYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb202MjM2Y2NlMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20wOTQyNjM1MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230047a8&color=%23202124&color=%23137333&color=%230047a8&color=%230047a8&color=%230047a8&color=%230047a8&color=%2333B679&color=%23007b83&color=%23c26401&color=%230047a8&color=%230047a8&color=%230047a8&color=%230047a8&color=%23c26401&color=%23c26401&color=%23202124&color=%23c26401&color=%23174ea6&color=%23b80672&color=%230047a8&color=%23202124&color=%23202124&color=%23202124&color=%23c26401&color=%237627bb&color=%23c26401" style="border:solid 1px #777" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
             </div>
+            <div class="dashboard-class">
+                <div class="class-sched">
+                    <br><h2>Today's Classes <time datetime="2024-04-16">April 16, 2024</time></h2>
+                    <table border="1px">
+                        <tr>
+                            <th>7:00am - 9:00am</th>
+                            <th>ITELEC 4</th>
+                            <th>ICT LAB</th>
+                            <th>M. Luquiz</th>
+                            <th>On Site</th>
+                            <th>Late</th>
+                        </tr>
+                        <tr>
+                            <th>7:00am - 9:00am</th>
+                            <th>ITELEC 4</th>
+                            <th>ICT LAB</th>
+                            <th>M. Luquiz</th>
+                            <th>On Site</th>
+                            <th>Late</th>
+                        </tr>
+                        <tr>
+                            <th>7:00am - 9:00am</th>
+                            <th>ITELEC 4</th>
+                            <th>ICT LAB</th>
+                            <th>M. Luquiz</th>
+                            <th>On Site</th>
+                            <th>Late</th>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
